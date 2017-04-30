@@ -3,7 +3,7 @@
 //1. Array item access
 
 var arr = [1,2,3,4,5,6,7,8]; 
-arr[/*...*/] // What goes between the square brackets if I want the value 6? 
+arr[5] // What goes between the square brackets if I want the value 6? 
 
 
 //2. Object value access
@@ -15,7 +15,7 @@ var fateOfTheFurious = { //How do I get the budget from this object?
     duration: "136 minutes"
 }
 
-fateOfTheFurious/*...*/
+fateOfTheFurious.budget/*...*/
 
 /*3. Write a function that takes a name with the following format 
 "FIRST MIDDLE_INITIAL LAST" and outputs it as "LAST, FIRST MIDDLE_INITIAL" 
@@ -25,13 +25,11 @@ You'll also need to work with arrays
 Read: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 */
 
-function formatName(name) {
-    
-    /*...*/
-    
-    return /*...*/
+function formatName(name){
+	var name="Jason E Fox";
+	var arrayName = name.split(" ");
+	return arrayName[2]+","+ " "+ arrayName[1]+ " "+ arrayName[0];
 }
-
 
 
 /*4. Write a function that takes an array, and two additional values and adds 
